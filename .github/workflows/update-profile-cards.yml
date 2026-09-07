@@ -12,6 +12,9 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out fork
+        uses: actions/checkout@v4
+
       - name: Generate overview card
         uses: stats-organization/github-readme-stats-action@v2
         with:
